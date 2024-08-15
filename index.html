@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class="calendar">
+        <header>
+            <button id="prev" aria-label="Mês anterior">«</button>
+            <h1 id="month-year"></h1>
+            <button id="next" aria-label="Próximo mês">»</button>
+        </header>
+        <div class="days-of-week">
+            <div>Dom</div>
+            <div>Seg</div>
+            <div>Ter</div>
+            <div>Qua</div>
+            <div>Qui</div>
+            <div>Sex</div>
+            <div>Sáb</div>
+        </div>
+        <div class="dates" id="calendar-body">
+            <!-- Datas serão inseridas aqui pelo JavaScript -->
+        </div>
+    </div>
+    
+    <!-- Modal para exibir informações sobre a data -->
+    <div id="modal" class="modal" role="dialog" aria-labelledby="holiday-name" aria-hidden="true">
+        <div class="modal-content">
+            <button id="close" class="close" aria-label="Fechar">&times;</button>
+            <h2 id="holiday-name"></h2>
+            <p id="holiday-description"></p>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
